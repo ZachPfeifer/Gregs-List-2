@@ -1,3 +1,13 @@
+body{
+  background: url(https://pbs.twimg.com/profile_images/880921056827060224/lF7O73EO.jpg);
+
+}
+main{
+  background: gray;
+  border-radius: 25px;
+  width: auto;
+  height: auto; 
+}
 .image-thumbnail{
   max-width: 20vw;
   max-height: 20vh;
@@ -6,4 +16,14 @@
 .card-size{
   max-width: 50vw;
   max-height: 50vh;
+}
+.title{
+  color:red;
+  text-align: center;
+  background-color: black;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
 }

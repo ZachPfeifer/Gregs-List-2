@@ -1,4 +1,5 @@
 import CarController from "./Controllers/CarController.js";
+import HouseController from "./Controllers/HouseController.js";
 
 
 class App {

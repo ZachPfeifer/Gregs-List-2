@@ -51,7 +51,7 @@ export default class CarService {
         _carApi.post('', data)
             .then(res => {
                 // this.getApiCars()
-                _state.cars.push(res.data.data)
+                _state.cars.push(new Car(res.data.data))
                 _setState('cars', _state.cars)
             })
             .catch(err => {
