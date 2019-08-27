@@ -24,12 +24,12 @@ export default class HouseController {
     e.preventDefault();
     let form = e.target
     let data = {
-      // _id: form._id.value,
+      _id: form._id.value,
       bedrooms: form.bedrooms.value,
       bathrooms: form.bathrooms.value,
       imgUrl: form.imgUrl.value,
       year: form.year.value,
-      levels: form.levels.value,
+      level: form.level.value,
       price: form.price.value,
       description: form.description.value,
     }

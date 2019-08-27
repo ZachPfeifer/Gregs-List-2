@@ -72,8 +72,8 @@
                             class="btn btn-success" type="submit">Create</button>
                     </div>
                     <div class="form-group">
-                        <label for="Level">Floors</label>
-                        <input type="text" class="form-control" id="Level" placeholder="Floors" name="model">
+                        <label for="level">Floors</label>
+                        <input type="text" class="form-control" id="level" placeholder="Floors" name="model">
                     </div>
                     <div class="form-group">
                         <label for="img">Image Url</label>
@@ -92,6 +92,11 @@
                         <label for="price">Price</label>
                         <input type="number" class="form-control" id="price" placeholder="Price" name="price">
                     </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="description"
+                            name="description">
+                    </div>
                 </form>
             </div>
             <div class="col-12">
@@ -102,7 +107,44 @@
                 </div>
             </div>
         </main>
+        <!--NOTE Jobs-->
+        <main class="row">
+            <h1>Car List:</h1>
+            <div class="col-12">
+                <form class="d-flex" onsubmit='app.controllers.jobController.addJob(event)'>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" class="form-control" id="company" placeholder="company" name="company">
+                        <button class="btn btn-success" type="submit">Create</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="jobTitle">Job Title</label>
+                        <input type="text" class="form-control" id="jobTitle" placeholder="jobTitle" name="jobTitle">
+                    </div>
+                    <div class="form-group">
+                        <label for="hours">Hours</label>
+                        <input type="number" class="form-control" id="hours" placeholder="Hours" name="hours">
+                    </div>
+                    <div class="form-group">
+                        <label for="rate">Rate</label>
+                        <input type="number" class="form-control" id="rate" placeholder="Rate" name="rate">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" class="form-control" id="description" placeholder="Description"
+                            name="description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12">
+                <h3>Available Jobs</h3>
+                <hr>
+                <div class="row" id="jobs-cards">
 
+                </div>
+            </div>
+        </main>
+        <hr>
 
     </div>
     <!--NOTE Script-->
